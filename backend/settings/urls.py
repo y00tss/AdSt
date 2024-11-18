@@ -19,10 +19,17 @@ from django.urls import path
 from django.urls.conf import include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 
+from auth_custom.router import urlpatterns as auth_custom_router
+from documentation.router import urlpatterns as documentation_router
+from groups.router import urlpatterns as groups_router
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("auth/", include("auth_custom.urls")),
+    path("auth/", include((auth_custom_router, "auth"))),
     path('api-auth/', include('rest_framework.urls')),
+
+    path('documentation/', include((documentation_router, 'documentation'))),
+    path('groups/', include((groups_router, 'groups'))),
 
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),

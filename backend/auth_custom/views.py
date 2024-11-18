@@ -8,7 +8,6 @@ from auth_custom.models import User
 from auth_custom.serializers import RegisterSerializer, LoginSerializer, TokenSerializer, UserSerializer
 
 
-
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer

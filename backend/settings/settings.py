@@ -46,8 +46,8 @@ INSTALLED_APPS = [
 
     # internal apps
     "auth_custom",
-    "groups",
     "documentation",
+    "groups",
 ]
 
 MIDDLEWARE = [
