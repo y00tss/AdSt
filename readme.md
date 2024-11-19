@@ -8,17 +8,11 @@ This is a Django-based backend API project. It is built using Django 5.x, Django
 ### 1. Clone the repository
 
 ```bash
-git clone 
-cd PAF
-```
-### 2. Create env file
-
-```bash
-cd backend
-touch .env
+git clone https://github.com/y00tss/AdSt
+cd AdSt
 ```
 
-### 3. Run the project with Docker Compose
+### 2. Run the project with Docker Compose
 
 To build and run the application:
 
@@ -26,12 +20,12 @@ To build and run the application:
 docker-compose up --build
 ```
 
-### 4. Access the API
+### 3. Access the API
 
 - **Backend API**: `http://localhost:8001/`
 - **Swagger UI (DRF Spectacular)**: `http://localhost:8001/api/schema/swagger-ui/`
 
-### 5. Stopping the Application
+### 4. Stopping the Application
 
 To stop the containers:
 
