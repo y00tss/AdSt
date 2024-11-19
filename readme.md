@@ -8,7 +8,7 @@ This is a Django-based backend API project. It is built using Django 5.x, Django
 ### 1. Clone the repository
 
 ```bash
-git clone https://git.dzencode.com/dzenpy/paf
+git clone 
 cd PAF
 ```
 ### 2. Create env file
