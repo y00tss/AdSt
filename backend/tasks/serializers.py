@@ -8,6 +8,3 @@ class TaskSerializer(serializers.ModelSerializer):
         model = Task
         fields = '__all__'
 
-
-class TaskStatusChangeSerializer(serializers.Serializer):
-    is_completed = serializers.BooleanField()
